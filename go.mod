@@ -1,4 +1,4 @@
-module github.com/mantil-io/go-mantil-template
+module github.com/mantil-io/template-github-to-slack
 
 go 1.16
 
