@@ -57,7 +57,7 @@ If something goes wrong you can always use `mantil logs` to check the logs of yo
 # How do you modify it?
 
 If you want different behaviour out of your function you can edit trigger events of your Github webhook and make necessary changes to your code in `api/handler.go`
-Examples of payloads for all Github events can be found in their [docs](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#watch).
+Examples of payloads for all Github events can be found in their [docs](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads).
 
 After each change you have to deploy your changes with `mantil deploy`.
 
