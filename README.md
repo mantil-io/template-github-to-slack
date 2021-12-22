@@ -1,3 +1,7 @@
+This template is an example of serverless integration between GitHub and Slack built on AWS Lambda. It enables you to process and forward events from GitHub to Slack instantly via webhooks meaning you can modify output based on your own needs, either per some criteria or with information in output. To create your own integration just follow instructions below. Expected output will look something like this:
+
+![image](https://github.com/mantil-io/template-github-to-slack/blob/master/images/gh2s_image.png) 
+
 # Prerequisites
 
 This template is created with Mantil. To download [Mantil CLI](https://github.com/mantil-io/mantil#installation) on Mac or Linux use Homebrew
