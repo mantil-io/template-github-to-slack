@@ -25,7 +25,7 @@ To deploy this application you will need:
 To locally create a new project from this template run:
 
 ```
-mantil new app --from github-to-slack
+mantil new app --from https://github.com/mantil-io/template-github-to-slack
 cd app
 ```
 
