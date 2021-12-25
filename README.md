@@ -1,10 +1,10 @@
-# About
+## About
 
 This template is an example of serverless integration between GitHub and Slack built on AWS Lambda. It enables you to process and forward events from GitHub to Slack instantly via webhooks meaning you can modify output based on your own needs, either per some criteria or with information in output. To create your own integration just follow instructions below. Expected output will look something like this:
 
 ![image](https://github.com/mantil-io/template-github-to-slack/blob/master/images/gh2s_image.png) 
 
-# Prerequisites
+## Prerequisites
 
 This template is created with Mantil. To download [Mantil CLI](https://github.com/mantil-io/mantil#installation) on Mac or Linux use Homebrew
 
@@ -20,7 +20,7 @@ To deploy this application you will need:
 - A GitHub account with a repository where you have admin rights
 - A Slack account with the right to create apps
 
-# Installation
+## Installation
 
 To locally create a new project from this template run:
 
@@ -29,7 +29,7 @@ mantil new app --from https://github.com/mantil-io/template-github-to-slack
 cd app
 ```
 
-# Configuration 
+## Configuration 
 
 Before deploying your application you will need to create a Slack webhook and add it as an environment variable for your function which will be used to post notifications to your Slack channel.
 
@@ -43,7 +43,7 @@ project:
     SLACK_WEBHOOK: # add your slack webhook here
 ```
 
-# Deploying an application
+## Deploying an application
 
 Note: If this is the first time you are using Mantil you will first need to install Mantil Node on your AWS account. For detailed instructions please follow these simple, one-step [setup instructions](https://github.com/mantil-io/mantil/blob/master/docs/getting_started.md#setup)
 
@@ -62,7 +62,7 @@ This command will create a new stage for your project with default name `develop
 Now you can output the stage endpoint with `mantil env -u`. The API endpoint for your function will have the name of that function in the path, in our case that is `$(mantil env -u)/star`.
 With this URL we can now create a Github webhook which will invoke our Lambda function on each star to our Github repository.
 
-# Setting up Github webhook
+## Setting up Github webhook
 
 To create new Github webhook, go to your repository and choose `Settings - Webhooks - Add webhook`.
 
@@ -72,7 +72,7 @@ If you did everything correctly Github will send you a test trigger which will i
 
 Congratulations, you just created and deployed a fully functional serverless AWS Lambda application!
 
-# Modification
+## Modification
 
 If you want different behavior out of your project you can add more triggers by creating new webhooks and new functions. Examples of payloads for all Github events can be found in their [docs](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads).
 
@@ -92,7 +92,7 @@ After each change you have to deploy your changes with `mantil deploy`, or instr
 
 For more detailed instructions please refer to [Mantil documentation](https://github.com/mantil-io/mantil#documentation).
 
-# Cleanup
+## Cleanup
 
 To remove the created stage with all resources from your AWS account destroy it with
 
@@ -100,7 +100,7 @@ To remove the created stage with all resources from your AWS account destroy it 
 mantil stage destroy development
 ```
 
-# Final thoughts
+## Final thoughts
 
 With this template you learned how to create a simple serverless application with AWS Lambda via Mantil where Lambda is invoked by webook. Check out our [documentation](https://github.com/mantil-io/mantil#documentation) to find more interesting templates. 
 
