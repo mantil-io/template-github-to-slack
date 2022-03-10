@@ -15,11 +15,10 @@ require (
 	github.com/gorilla/websocket v1.4.2 // indirect
 	github.com/imkira/go-interpol v1.1.0 // indirect
 	github.com/klauspost/compress v1.13.6 // indirect
-	github.com/mantil-io/mantil.go v0.1.6
+	github.com/mantil-io/mantil.go v0.1.12
 	github.com/mattn/go-colorable v0.1.8 // indirect
 	github.com/moul/http2curl v1.0.0 // indirect
-	github.com/nats-io/nats-server/v2 v2.4.1-0.20210907200628-874c79fe411f // indirect
-	github.com/nats-io/nats.go v1.13.0 // indirect
+	github.com/nats-io/jwt v1.2.2 // indirect
 	github.com/onsi/gomega v1.16.0 // indirect
 	github.com/sergi/go-diff v1.2.0 // indirect
 	github.com/smartystreets/goconvey v1.6.4 // indirect
@@ -30,5 +29,4 @@ require (
 	github.com/yudai/gojsondiff v1.0.0 // indirect
 	github.com/yudai/golcs v0.0.0-20170316035057-ecda9a501e82 // indirect
 	github.com/yudai/pp v2.0.1+incompatible // indirect
-	golang.org/x/crypto v0.0.0-20211117183948-ae814b36b871 // indirect
 )
